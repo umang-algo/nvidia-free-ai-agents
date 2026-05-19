@@ -1,0 +1,111 @@
+:root {
+    color-scheme: dark;
+    background: #080c14;
+    color: #e5e7eb;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: radial-gradient(circle at top, rgba(56,189,248,0.18), transparent 28%),
+                radial-gradient(circle at bottom right, rgba(168,85,247,0.2), transparent 24%),
+                #080c14;
+}
+
+.page-shell {
+    width: min(960px, 100%);
+    display: grid;
+    gap: 24px;
+}
+
+.hero {
+    padding: 28px 30px;
+    border-radius: 28px;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.hero h1 {
+    margin: 0 0 12px;
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.hero p {
+    margin: 0;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+.panel {
+    padding: 24px;
+    border-radius: 24px;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid rgba(148, 163, 184, 0.16);
+    border-radius: 16px;
+    padding: 16px;
+    background: rgba(15, 23, 42, 0.88);
+    color: #e2e8f0;
+    resize: vertical;
+    min-height: 120px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+button {
+    margin-top: 16px;
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+    padding: 14px 18px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(135deg, #38bdf8, #a855f7);
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    filter: brightness(1.05);
+}
+
+.output-panel {
+    display: grid;
+    gap: 16px;
+}
+
+.answer-box {
+    min-height: 140px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    color: #e2e8f0;
+    line-height: 1.7;
+    white-space: pre-wrap;
+}
+
+.source-list {
+    color: #a5b4fc;
+    font-size: 0.95rem;
+}

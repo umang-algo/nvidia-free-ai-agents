@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Navigator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="hero">
+            <h1>Knowledge Navigator</h1>
+            <p>Ask questions about documents and get concise answers with source-aware context.</p>
+        </section>
+
+        <section class="panel">
+            <label for="question-input">Ask a question</label>
+            <textarea id="question-input" placeholder="What is the best way to design a semantic search experience?" rows="4"></textarea>
+            <button id="ask-btn">Get Answer</button>
+        </section>
+
+        <section class="panel output-panel">
+            <h2>Answer</h2>
+            <div id="answer-block" class="answer-box">Ask a question to see a response.</div>
+            <div id="source-block" class="source-list"></div>
+        </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
